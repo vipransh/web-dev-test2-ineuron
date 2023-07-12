@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            padding: 3px 18px;
+            border-radius: 12px;
+            background-color: #00D84A;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        .menu-list{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            list-style: none;
+        }
+        .menu2{
+            /* display: none; */
+            position: absolute;
+            top: 45px;
+            right: 10px;
+            background-color: #00D84A;
+            padding: 8px 8px;
+        }
+        .closeMenu{
+            display: none;
+        }
+        .hamburger{
+            display: none;
+        }
+        .menu-list2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 8px;
+            list-style: none;
+        }
+        @media only screen and (max-width: 600px){
+            .menu-list{
+                display: none;
+            }
+            .hamburger{
+            display: flex;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <?xml version="1.0" ?><svg height="32" viewBox="0 0 1792 1792" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M704 1216q0 40-12.5 82t-43 76-72.5 34-72.5-34-43-76-12.5-82 12.5-82 43-76 72.5-34 72.5 34 43 76 12.5 82zm640 0q0 40-12.5 82t-43 76-72.5 34-72.5-34-43-76-12.5-82 12.5-82 43-76 72.5-34 72.5 34 43 76 12.5 82zm160 0q0-120-69-204t-187-84q-41 0-195 21-71 11-157 11t-157-11q-152-21-195-21-118 0-187 84t-69 204q0 88 32 153.5t81 103 122 60 140 29.5 149 7h168q82 0 149-7t140-29.5 122-60 81-103 32-153.5zm224-176q0 207-61 331-38 77-105.5 133t-141 86-170 47.5-171.5 22-167 4.5q-78 0-142-3t-147.5-12.5-152.5-30-137-51.5-121-81-86-115q-62-123-62-331 0-237 136-396-27-82-27-170 0-116 51-218 108 0 190 39.5t189 123.5q147-35 309-35 148 0 280 32 105-82 187-121t189-39q51 102 51 218 0 87-27 168 136 160 136 398z"/></svg>
+        <ul class="menu-list">
+            <li><a >Home</a></li>
+            <li><a >Services</a></li>
+            <li><a >About us</a></li>
+            <li><a >Contact us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+        </div>
+    </div>
+    <div class="closeMenu" id="menu2">
+        <ul class="menu-list2">
+            <li><a >Home</a></li>
+            <li><a >Services</a></li>
+            <li><a >About us</a></li>
+            <li><a >Contact us</a></li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
